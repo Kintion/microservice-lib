@@ -15,9 +15,9 @@ public class Info {
   @JsonProperty("gameDuration")
   private long gameDuration;
 
-//  @JsonProperty("gameEndTimestamp")
-//  private long gameEndTimestamp;
-//
+  @JsonProperty("gameEndTimestamp")
+  private long gameEndTimestamp;
+
 //  @JsonProperty("gameId")
 //  private long gameID;
 //

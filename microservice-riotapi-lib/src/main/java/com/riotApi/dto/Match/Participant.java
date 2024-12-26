@@ -8,13 +8,13 @@ import lombok.Data;
 public class Participant {
 //  private long allInPings;
 //  private long assistMePings;
-//  private long assists;
+  private long assists;
 //  private long baronKills;
 //  private long basicPings;
 //  private long bountyLevel;
 //  private Challenges challenges;
 //  private long champExperience;
-//  private long champLevel;
+  private long champLevel;
 //  private long championID;
   private String championName;
 //  private long championTransform;
@@ -25,7 +25,7 @@ public class Participant {
 //  private long damageDealtToTurrets;
 //  private long damageSelfMitigated;
 //  private long dangerPings;
-//  private long deaths;
+  private long deaths;
 //  private long detectorWardsPlaced;
 //  private long doubleKills;
 //  private long dragonKills;
@@ -46,20 +46,20 @@ public class Participant {
 //  private long inhibitorKills;
 //  private long inhibitorTakedowns;
 //  private long inhibitorsLost;
-//  private long item0;
-//  private long item1;
-//  private long item2;
-//  private long item3;
-//  private long item4;
-//  private long item5;
-//  private long item6;
+  private long item0;
+  private long item1;
+  private long item2;
+  private long item3;
+  private long item4;
+  private long item5;
+  private long item6;
 //  private long itemsPurchased;
 //  private long killingSprees;
-//  private long kills;
+  private long kills;
 //  private String lane;
 //  private long largestCriticalStrike;
 //  private long largestKillingSpree;
-//  private long largestMultiKill;
+  private long largestMultiKill;
 //  private long longestTimeSpentLiving;
 //  private long magicDamageDealt;
 //  private long magicDamageDealtToChampions;
@@ -75,7 +75,7 @@ public class Participant {
 //  private long onMyWayPings;
 //  private long participantID;
 //  private long pentaKills;
-//  private Perks perks;
+  private Perks perks;
 //  private long physicalDamageDealt;
 //  private long physicalDamageDealtToChampions;
 //  private long physicalDamageTaken;
@@ -96,15 +96,15 @@ public class Participant {
   private String riotIDTagline;
 //  private String role;
 //  private long sightWardsBoughtInGame;
-//  private long spell1Casts;
-//  private long spell2Casts;
-//  private long spell3Casts;
-//  private long spell4Casts;
+  private long spell1Casts;
+  private long spell2Casts;
+  private long spell3Casts;
+  private long spell4Casts;
 //  private long subteamPlacement;
 //  private long summoner1Casts;
-//  private long summoner1ID;
+  private long summoner1ID;
 //  private long summoner2Casts;
-//  private long summoner2ID;
+  private long summoner2ID;
 //  private String summonerID;
 //  private long summonerLevel;
 //  private String summonerName;
@@ -115,9 +115,9 @@ public class Participant {
 //  private long timePlayed;
 //  private long totalAllyJungleMinionsKilled;
 //  private long totalDamageDealt;
-//  private long totalDamageDealtToChampions;
+  private long totalDamageDealtToChampions;
 //  private long totalDamageShieldedOnTeammates;
-//  private long totalDamageTaken;
+  private long totalDamageTaken;
 //  private long totalEnemyJungleMinionsKilled;
 //  private long totalHeal;
 //  private long totalHealsOnTeammates;
@@ -135,9 +135,9 @@ public class Participant {
 //  private long unrealKills;
 //  private long visionClearedPings;
 //  private long visionScore;
-//  private long visionWardsBoughtInGame;
+  private long visionWardsBoughtInGame;
 //  private long wardsKilled;
-//  private long wardsPlaced;
+  private long wardsPlaced;
 //  private boolean win;
 //
 //  @JsonProperty("allInPings")
@@ -150,11 +150,11 @@ public class Participant {
 //  @JsonProperty("assistMePings")
 //  public void setAssistMePings(long value) { this.assistMePings = value; }
 //
-//  @JsonProperty("assists")
-//  public long getAssists() { return assists; }
-//  @JsonProperty("assists")
-//  public void setAssists(long value) { this.assists = value; }
-//
+  @JsonProperty("assists")
+  public long getAssists() { return assists; }
+  @JsonProperty("assists")
+  public void setAssists(long value) { this.assists = value; }
+
 //  @JsonProperty("baronKills")
 //  public long getBaronKills() { return baronKills; }
 //  @JsonProperty("baronKills")
@@ -180,11 +180,11 @@ public class Participant {
 //  @JsonProperty("champExperience")
 //  public void setChampExperience(long value) { this.champExperience = value; }
 //
-//  @JsonProperty("champLevel")
-//  public long getChampLevel() { return champLevel; }
-//  @JsonProperty("champLevel")
-//  public void setChampLevel(long value) { this.champLevel = value; }
-//
+  @JsonProperty("champLevel")
+  public long getChampLevel() { return champLevel; }
+  @JsonProperty("champLevel")
+  public void setChampLevel(long value) { this.champLevel = value; }
+
 //  @JsonProperty("championId")
 //  public long getChampionID() { return championID; }
 //  @JsonProperty("championId")
@@ -235,10 +235,10 @@ public class Participant {
 //  @JsonProperty("dangerPings")
 //  public void setDangerPings(long value) { this.dangerPings = value; }
 //
-//  @JsonProperty("deaths")
-//  public long getDeaths() { return deaths; }
-//  @JsonProperty("deaths")
-//  public void setDeaths(long value) { this.deaths = value; }
+  @JsonProperty("deaths")
+  public long getDeaths() { return deaths; }
+  @JsonProperty("deaths")
+  public void setDeaths(long value) { this.deaths = value; }
 //
 //  @JsonProperty("detectorWardsPlaced")
 //  public long getDetectorWardsPlaced() { return detectorWardsPlaced; }
@@ -340,40 +340,40 @@ public class Participant {
 //  @JsonProperty("inhibitorsLost")
 //  public void setInhibitorsLost(long value) { this.inhibitorsLost = value; }
 //
-//  @JsonProperty("item0")
-//  public long getItem0() { return item0; }
-//  @JsonProperty("item0")
-//  public void setItem0(long value) { this.item0 = value; }
-//
-//  @JsonProperty("item1")
-//  public long getItem1() { return item1; }
-//  @JsonProperty("item1")
-//  public void setItem1(long value) { this.item1 = value; }
-//
-//  @JsonProperty("item2")
-//  public long getItem2() { return item2; }
-//  @JsonProperty("item2")
-//  public void setItem2(long value) { this.item2 = value; }
-//
-//  @JsonProperty("item3")
-//  public long getItem3() { return item3; }
-//  @JsonProperty("item3")
-//  public void setItem3(long value) { this.item3 = value; }
-//
-//  @JsonProperty("item4")
-//  public long getItem4() { return item4; }
-//  @JsonProperty("item4")
-//  public void setItem4(long value) { this.item4 = value; }
-//
-//  @JsonProperty("item5")
-//  public long getItem5() { return item5; }
-//  @JsonProperty("item5")
-//  public void setItem5(long value) { this.item5 = value; }
-//
-//  @JsonProperty("item6")
-//  public long getItem6() { return item6; }
-//  @JsonProperty("item6")
-//  public void setItem6(long value) { this.item6 = value; }
+  @JsonProperty("item0")
+  public long getItem0() { return item0; }
+  @JsonProperty("item0")
+  public void setItem0(long value) { this.item0 = value; }
+
+  @JsonProperty("item1")
+  public long getItem1() { return item1; }
+  @JsonProperty("item1")
+  public void setItem1(long value) { this.item1 = value; }
+
+  @JsonProperty("item2")
+  public long getItem2() { return item2; }
+  @JsonProperty("item2")
+  public void setItem2(long value) { this.item2 = value; }
+
+  @JsonProperty("item3")
+  public long getItem3() { return item3; }
+  @JsonProperty("item3")
+  public void setItem3(long value) { this.item3 = value; }
+
+  @JsonProperty("item4")
+  public long getItem4() { return item4; }
+  @JsonProperty("item4")
+  public void setItem4(long value) { this.item4 = value; }
+
+  @JsonProperty("item5")
+  public long getItem5() { return item5; }
+  @JsonProperty("item5")
+  public void setItem5(long value) { this.item5 = value; }
+
+  @JsonProperty("item6")
+  public long getItem6() { return item6; }
+  @JsonProperty("item6")
+  public void setItem6(long value) { this.item6 = value; }
 //
 //  @JsonProperty("itemsPurchased")
 //  public long getItemsPurchased() { return itemsPurchased; }
@@ -385,10 +385,10 @@ public class Participant {
 //  @JsonProperty("killingSprees")
 //  public void setKillingSprees(long value) { this.killingSprees = value; }
 //
-//  @JsonProperty("kills")
-//  public long getKills() { return kills; }
-//  @JsonProperty("kills")
-//  public void setKills(long value) { this.kills = value; }
+  @JsonProperty("kills")
+  public long getKills() { return kills; }
+  @JsonProperty("kills")
+  public void setKills(long value) { this.kills = value; }
 //
 //  @JsonProperty("lane")
 //  public String getLane() { return lane; }
@@ -405,11 +405,11 @@ public class Participant {
 //  @JsonProperty("largestKillingSpree")
 //  public void setLargestKillingSpree(long value) { this.largestKillingSpree = value; }
 //
-//  @JsonProperty("largestMultiKill")
-//  public long getLargestMultiKill() { return largestMultiKill; }
-//  @JsonProperty("largestMultiKill")
-//  public void setLargestMultiKill(long value) { this.largestMultiKill = value; }
-//
+  @JsonProperty("largestMultiKill")
+  public long getLargestMultiKill() { return largestMultiKill; }
+  @JsonProperty("largestMultiKill")
+  public void setLargestMultiKill(long value) { this.largestMultiKill = value; }
+
 //  @JsonProperty("longestTimeSpentLiving")
 //  public long getLongestTimeSpentLiving() { return longestTimeSpentLiving; }
 //  @JsonProperty("longestTimeSpentLiving")
@@ -485,11 +485,11 @@ public class Participant {
 //  @JsonProperty("pentaKills")
 //  public void setPentaKills(long value) { this.pentaKills = value; }
 //
-//  @JsonProperty("perks")
-//  public Perks getPerks() { return perks; }
-//  @JsonProperty("perks")
-//  public void setPerks(Perks value) { this.perks = value; }
-//
+  @JsonProperty("perks")
+  public Perks getPerks() { return perks; }
+  @JsonProperty("perks")
+  public void setPerks(Perks value) { this.perks = value; }
+
 //  @JsonProperty("physicalDamageDealt")
 //  public long getPhysicalDamageDealt() { return physicalDamageDealt; }
 //  @JsonProperty("physicalDamageDealt")
@@ -620,20 +620,20 @@ public class Participant {
 //  @JsonProperty("summoner1Casts")
 //  public void setSummoner1Casts(long value) { this.summoner1Casts = value; }
 //
-//  @JsonProperty("summoner1Id")
-//  public long getSummoner1ID() { return summoner1ID; }
-//  @JsonProperty("summoner1Id")
-//  public void setSummoner1ID(long value) { this.summoner1ID = value; }
+  @JsonProperty("summoner1Id")
+  public long getSummoner1ID() { return summoner1ID; }
+  @JsonProperty("summoner1Id")
+  public void setSummoner1ID(long value) { this.summoner1ID = value; }
 //
 //  @JsonProperty("summoner2Casts")
 //  public long getSummoner2Casts() { return summoner2Casts; }
 //  @JsonProperty("summoner2Casts")
 //  public void setSummoner2Casts(long value) { this.summoner2Casts = value; }
 //
-//  @JsonProperty("summoner2Id")
-//  public long getSummoner2ID() { return summoner2ID; }
-//  @JsonProperty("summoner2Id")
-//  public void setSummoner2ID(long value) { this.summoner2ID = value; }
+  @JsonProperty("summoner2Id")
+  public long getSummoner2ID() { return summoner2ID; }
+  @JsonProperty("summoner2Id")
+  public void setSummoner2ID(long value) { this.summoner2ID = value; }
 //
 //  @JsonProperty("summonerId")
 //  public String getSummonerID() { return summonerID; }
@@ -685,21 +685,21 @@ public class Participant {
 //  @JsonProperty("totalDamageDealt")
 //  public void setTotalDamageDealt(long value) { this.totalDamageDealt = value; }
 //
-//  @JsonProperty("totalDamageDealtToChampions")
-//  public long getTotalDamageDealtToChampions() { return totalDamageDealtToChampions; }
-//  @JsonProperty("totalDamageDealtToChampions")
-//  public void setTotalDamageDealtToChampions(long value) { this.totalDamageDealtToChampions = value; }
+  @JsonProperty("totalDamageDealtToChampions")
+  public long getTotalDamageDealtToChampions() { return totalDamageDealtToChampions; }
+  @JsonProperty("totalDamageDealtToChampions")
+  public void setTotalDamageDealtToChampions(long value) { this.totalDamageDealtToChampions = value; }
 //
 //  @JsonProperty("totalDamageShieldedOnTeammates")
 //  public long getTotalDamageShieldedOnTeammates() { return totalDamageShieldedOnTeammates; }
 //  @JsonProperty("totalDamageShieldedOnTeammates")
 //  public void setTotalDamageShieldedOnTeammates(long value) { this.totalDamageShieldedOnTeammates = value; }
 //
-//  @JsonProperty("totalDamageTaken")
-//  public long getTotalDamageTaken() { return totalDamageTaken; }
-//  @JsonProperty("totalDamageTaken")
-//  public void setTotalDamageTaken(long value) { this.totalDamageTaken = value; }
-//
+  @JsonProperty("totalDamageTaken")
+  public long getTotalDamageTaken() { return totalDamageTaken; }
+  @JsonProperty("totalDamageTaken")
+  public void setTotalDamageTaken(long value) { this.totalDamageTaken = value; }
+
 //  @JsonProperty("totalEnemyJungleMinionsKilled")
 //  public long getTotalEnemyJungleMinionsKilled() { return totalEnemyJungleMinionsKilled; }
 //  @JsonProperty("totalEnemyJungleMinionsKilled")
@@ -795,11 +795,11 @@ public class Participant {
 //  @JsonProperty("wardsKilled")
 //  public void setWardsKilled(long value) { this.wardsKilled = value; }
 //
-//  @JsonProperty("wardsPlaced")
-//  public long getWardsPlaced() { return wardsPlaced; }
-//  @JsonProperty("wardsPlaced")
-//  public void setWardsPlaced(long value) { this.wardsPlaced = value; }
-//
+  @JsonProperty("wardsPlaced")
+  public long getWardsPlaced() { return wardsPlaced; }
+  @JsonProperty("wardsPlaced")
+  public void setWardsPlaced(long value) { this.wardsPlaced = value; }
+
 //  @JsonProperty("win")
 //  public boolean getWin() { return win; }
 //  @JsonProperty("win")
